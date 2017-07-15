@@ -60,6 +60,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
+    
+    //This is to clear the text field when a user taps into it
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == topTextField {
             topTextField.text = ""
