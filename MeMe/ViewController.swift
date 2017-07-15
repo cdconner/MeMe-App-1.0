@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
-
+    
     let pickerController = UIImagePickerController()
     
     
@@ -17,7 +17,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var imagePickerView: UIImageView!
     @IBOutlet weak var bottomTextField: UITextField!
     @IBOutlet weak var topTextField: UITextField!
-
+    
     
     override func viewWillAppear(_ animated: Bool) {
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
@@ -34,8 +34,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         bottomTextField.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    
     @IBAction func pickAnImage(_ sender: Any) {
         pickerController.sourceType = .photoLibrary
         self.present(pickerController, animated: true, completion: nil)
@@ -68,6 +68,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         } else {
             bottomTextField.text = ""
         }
+    }
+    
+    //This allows for dismissal of the keyboard when the user presses return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 }
 
