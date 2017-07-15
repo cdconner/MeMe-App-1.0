@@ -8,18 +8,64 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
+    let pickerController = UIImagePickerController()
+    
+    
+    @IBOutlet weak var cameraButton: UIBarButtonItem!
+    @IBOutlet weak var imagePickerView: UIImageView!
+    @IBOutlet weak var bottomTextField: UITextField!
+    @IBOutlet weak var topTextField: UITextField!
+
+    
+    override func viewWillAppear(_ animated: Bool) {
+        cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        topTextField.textAlignment = .center
+        bottomTextField.textAlignment = .center
+        topTextField.text = "Top"
+        bottomTextField.text = "Bottom"
+        pickerController.delegate = self
+        topTextField.delegate = self
+        bottomTextField.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func pickAnImage(_ sender: Any) {
+        pickerController.sourceType = .photoLibrary
+        self.present(pickerController, animated: true, completion: nil)
     }
-
-
+    
+    @IBAction func pickanImageFromCamera(_ sender: Any) {
+        pickerController.sourceType = .camera
+        self.present(pickerController, animated: true, completion: nil)
+    }
+    
+    
+    func imagePickerController(_ pickerController: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imagePickerView.image = image
+            imagePickerView.contentMode = .scaleAspectFit
+        }
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerControllerDidCancel(_ textField: UIImagePickerController) {
+        
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        if textField == topTextField {
+            topTextField.text = ""
+        } else {
+            bottomTextField.text = ""
+        }
+    }
 }
 
