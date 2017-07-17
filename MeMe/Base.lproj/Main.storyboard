@@ -36,7 +36,7 @@
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p5a-Yx-2wE">
-                                <rect key="frame" x="16" y="79" width="343" height="410"/>
+                                <rect key="frame" x="16" y="55" width="343" height="496"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tMF-Gl-dHH">
@@ -53,6 +53,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83Q-0d-Y7P">
+                                <rect key="frame" x="16" y="17" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Share"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -65,6 +70,7 @@
                         <outlet property="bottomTextField" destination="tMF-Gl-dHH" id="o0s-2m-ia3"/>
                         <outlet property="cameraButton" destination="A2l-8P-OPQ" id="ktQ-08-HUC"/>
                         <outlet property="imagePickerView" destination="p5a-Yx-2wE" id="G0N-fe-Tsz"/>
+                        <outlet property="shareButton" destination="83Q-0d-Y7P" id="YcR-8w-r9j"/>
                         <outlet property="topTextField" destination="sxo-vi-2dq" id="b2E-rl-ZX5"/>
                     </connections>
                 </viewController>

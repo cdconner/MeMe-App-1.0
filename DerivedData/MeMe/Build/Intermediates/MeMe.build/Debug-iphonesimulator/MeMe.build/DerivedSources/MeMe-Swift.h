@@ -158,6 +158,10 @@ SWIFT_CLASS("_TtC4MeMe11AppDelegate")
 @class UIBarButtonItem;
 @class UIImageView;
 @class UITextField;
+@class UIButton;
+@class UIToolbar;
+@class UINavigationBar;
+@class UIImage;
 @class NSBundle;
 @class NSCoder;
 
@@ -167,6 +171,7 @@ SWIFT_CLASS("_TtC4MeMe14ViewController")
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified cameraButton;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imagePickerView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified bottomTextField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified shareButton;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified topTextField;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -183,6 +188,10 @@ SWIFT_CLASS("_TtC4MeMe14ViewController")
 - (void)keyboardWillShow:(NSNotification * _Nonnull)notification;
 - (void)keyboardWillHide:(NSNotification * _Nonnull)notification;
 - (CGFloat)getKeyboardHeight:(NSNotification * _Nonnull)notification SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified toolBar;
+@property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navBar;
+- (void)save;
+- (UIImage * _Nonnull)generateMemedImage SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
