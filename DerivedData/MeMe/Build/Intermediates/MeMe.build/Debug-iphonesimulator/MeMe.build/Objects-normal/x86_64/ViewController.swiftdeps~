@@ -23,6 +23,7 @@ provides-dynamic-lookup:
 - "pickanImageFromCamera"
 - "pickerController"
 - "save"
+- "share"
 - "shareButton"
 - "subscribeToKeyboardNotifications"
 - "textFieldDidBeginEditing"
@@ -37,11 +38,14 @@ depends-top-level:
 - !private "-="
 - !private "/"
 - !private "=="
+- "AnyObject"
+- !private "Array"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - "CGFloat"
 - "CastingPrecedence"
+- !private "NSError"
 - "NSFontAttributeName"
 - "NSForegroundColorAttributeName"
 - "NSNumber"
@@ -53,6 +57,7 @@ depends-top-level:
 - !private "NotificationCenter"
 - "String"
 - "StringLiteralType"
+- !private "UIActivityViewController"
 - "UIBarButtonItem"
 - "UIButton"
 - "UIColor"
@@ -73,6 +78,7 @@ depends-top-level:
 - "UIToolbar"
 - "UIViewController"
 - "ViewController"
+- !private "Void"
 depends-member:
 - !private ["Ps9AnyObject", "Meme"]
 - ["Ps9AnyObject", "NSFontAttributeName"]
@@ -82,6 +88,7 @@ depends-member:
 - ["Ps9AnyObject", "NSStrokeWidthAttributeName"]
 - !private ["Ps9AnyObject", "NSTextAlignment"]
 - !private ["Ps9AnyObject", "NotificationCenter"]
+- !private ["Ps9AnyObject", "UIActivityViewController"]
 - ["Ps9AnyObject", "UIColor"]
 - ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIGraphicsBeginImageContext"]
@@ -95,6 +102,7 @@ depends-member:
 - !private ["Ps9AnyObject", "bottomTextField"]
 - !private ["Ps9AnyObject", "cameraButton"]
 - !private ["Ps9AnyObject", "cgRectValue"]
+- !private ["Ps9AnyObject", "completionWithItemsHandler"]
 - !private ["Ps9AnyObject", "contentMode"]
 - !private ["Ps9AnyObject", "default"]
 - !private ["Ps9AnyObject", "defaultTextAttributes"]
@@ -167,6 +175,7 @@ depends-member:
 - ["Ps7CVarArg", "NSStrokeWidthAttributeName"]
 - !private ["Ps7CVarArg", "NSTextAlignment"]
 - !private ["Ps7CVarArg", "NotificationCenter"]
+- !private ["Ps7CVarArg", "UIActivityViewController"]
 - ["Ps7CVarArg", "UIColor"]
 - ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UIGraphicsBeginImageContext"]
@@ -180,6 +189,7 @@ depends-member:
 - !private ["Ps7CVarArg", "bottomTextField"]
 - !private ["Ps7CVarArg", "cameraButton"]
 - !private ["Ps7CVarArg", "cgRectValue"]
+- !private ["Ps7CVarArg", "completionWithItemsHandler"]
 - !private ["Ps7CVarArg", "contentMode"]
 - !private ["Ps7CVarArg", "default"]
 - !private ["Ps7CVarArg", "defaultTextAttributes"]
@@ -241,6 +251,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "NSStrokeWidthAttributeName"]
 - !private ["Ps28CustomDebugStringConvertible", "NSTextAlignment"]
 - !private ["Ps28CustomDebugStringConvertible", "NotificationCenter"]
+- !private ["Ps28CustomDebugStringConvertible", "UIActivityViewController"]
 - ["Ps28CustomDebugStringConvertible", "UIColor"]
 - ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIGraphicsBeginImageContext"]
@@ -256,6 +267,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "bottomTextField"]
 - !private ["Ps28CustomDebugStringConvertible", "cameraButton"]
 - !private ["Ps28CustomDebugStringConvertible", "cgRectValue"]
+- !private ["Ps28CustomDebugStringConvertible", "completionWithItemsHandler"]
 - !private ["Ps28CustomDebugStringConvertible", "contentMode"]
 - !private ["Ps28CustomDebugStringConvertible", "default"]
 - !private ["Ps28CustomDebugStringConvertible", "defaultTextAttributes"]
@@ -334,6 +346,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "NSStrokeWidthAttributeName"]
 - !private ["Ps23CustomStringConvertible", "NSTextAlignment"]
 - !private ["Ps23CustomStringConvertible", "NotificationCenter"]
+- !private ["Ps23CustomStringConvertible", "UIActivityViewController"]
 - ["Ps23CustomStringConvertible", "UIColor"]
 - ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIGraphicsBeginImageContext"]
@@ -348,6 +361,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "bottomTextField"]
 - !private ["Ps23CustomStringConvertible", "cameraButton"]
 - !private ["Ps23CustomStringConvertible", "cgRectValue"]
+- !private ["Ps23CustomStringConvertible", "completionWithItemsHandler"]
 - !private ["Ps23CustomStringConvertible", "contentMode"]
 - !private ["Ps23CustomStringConvertible", "default"]
 - !private ["Ps23CustomStringConvertible", "defaultTextAttributes"]
@@ -407,6 +421,7 @@ depends-member:
 - ["Ps9Equatable", "NSStrokeWidthAttributeName"]
 - !private ["Ps9Equatable", "NSTextAlignment"]
 - !private ["Ps9Equatable", "NotificationCenter"]
+- !private ["Ps9Equatable", "UIActivityViewController"]
 - ["Ps9Equatable", "UIColor"]
 - ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIGraphicsBeginImageContext"]
@@ -425,6 +440,7 @@ depends-member:
 - !private ["Ps9Equatable", "cameraButton"]
 - !private ["Ps9Equatable", "center"]
 - !private ["Ps9Equatable", "cgRectValue"]
+- !private ["Ps9Equatable", "completionWithItemsHandler"]
 - !private ["Ps9Equatable", "contentMode"]
 - !private ["Ps9Equatable", "default"]
 - !private ["Ps9Equatable", "defaultTextAttributes"]
@@ -498,6 +514,7 @@ depends-member:
 - ["Ps8Hashable", "NSStrokeWidthAttributeName"]
 - !private ["Ps8Hashable", "NSTextAlignment"]
 - !private ["Ps8Hashable", "NotificationCenter"]
+- !private ["Ps8Hashable", "UIActivityViewController"]
 - ["Ps8Hashable", "UIColor"]
 - ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIGraphicsBeginImageContext"]
@@ -516,6 +533,7 @@ depends-member:
 - !private ["Ps8Hashable", "cameraButton"]
 - !private ["Ps8Hashable", "center"]
 - !private ["Ps8Hashable", "cgRectValue"]
+- !private ["Ps8Hashable", "completionWithItemsHandler"]
 - !private ["Ps8Hashable", "contentMode"]
 - !private ["Ps8Hashable", "default"]
 - !private ["Ps8Hashable", "defaultTextAttributes"]
@@ -585,6 +603,7 @@ depends-member:
 - ["PSo8NSCoding", "NSStrokeWidthAttributeName"]
 - !private ["PSo8NSCoding", "NSTextAlignment"]
 - !private ["PSo8NSCoding", "NotificationCenter"]
+- !private ["PSo8NSCoding", "UIActivityViewController"]
 - ["PSo8NSCoding", "UIColor"]
 - ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIGraphicsBeginImageContext"]
@@ -597,6 +616,7 @@ depends-member:
 - !private ["PSo8NSCoding", "bottomTextField"]
 - !private ["PSo8NSCoding", "cameraButton"]
 - !private ["PSo8NSCoding", "cgRectValue"]
+- !private ["PSo8NSCoding", "completionWithItemsHandler"]
 - !private ["PSo8NSCoding", "contentMode"]
 - !private ["PSo8NSCoding", "defaultTextAttributes"]
 - !private ["PSo8NSCoding", "delegate"]
@@ -655,6 +675,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "NSStrokeWidthAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "NSTextAlignment"]
 - !private ["PSo26NSExtensionRequestHandling", "NotificationCenter"]
+- !private ["PSo26NSExtensionRequestHandling", "UIActivityViewController"]
 - ["PSo26NSExtensionRequestHandling", "UIColor"]
 - ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIGraphicsBeginImageContext"]
@@ -665,6 +686,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["PSo26NSExtensionRequestHandling", "bottomTextField"]
 - !private ["PSo26NSExtensionRequestHandling", "cameraButton"]
+- !private ["PSo26NSExtensionRequestHandling", "completionWithItemsHandler"]
 - !private ["PSo26NSExtensionRequestHandling", "delegate"]
 - !private ["PSo26NSExtensionRequestHandling", "dismiss"]
 - !private ["PSo26NSExtensionRequestHandling", "generateMemedImage"]
@@ -702,9 +724,11 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSNumber", "init"]
+- ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "Meme"]
+- !private ["CSo8NSObject", "NSError"]
 - ["CSo8NSObject", "NSFontAttributeName"]
 - ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - ["CSo8NSObject", "NSNumber"]
@@ -715,6 +739,7 @@ depends-member:
 - ["CSo8NSObject", "Notification"]
 - !private ["CSo8NSObject", "NotificationCenter"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIActivityViewController"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIColor"]
@@ -730,11 +755,13 @@ depends-member:
 - ["CSo8NSObject", "UINavigationBar"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "UIToolbar"]
+- !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addObserver"]
 - ["CSo8NSObject", "black"]
 - ["CSo8NSObject", "bottomTextField"]
 - ["CSo8NSObject", "cameraButton"]
 - !private ["CSo8NSObject", "cgRectValue"]
+- !private ["CSo8NSObject", "completionWithItemsHandler"]
 - !private ["CSo8NSObject", "contentMode"]
 - !private ["CSo8NSObject", "default"]
 - !private ["CSo8NSObject", "defaultTextAttributes"]
@@ -766,6 +793,7 @@ depends-member:
 - !private ["CSo8NSObject", "present"]
 - !private ["CSo8NSObject", "removeObserver"]
 - ["CSo8NSObject", "save"]
+- ["CSo8NSObject", "share"]
 - ["CSo8NSObject", "shareButton"]
 - !private ["CSo8NSObject", "sourceType"]
 - ["CSo8NSObject", "subscribeToKeyboardNotifications"]
@@ -794,6 +822,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "NSStrokeWidthAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSTextAlignment"]
 - !private ["PSo16NSObjectProtocol", "NotificationCenter"]
+- !private ["PSo16NSObjectProtocol", "UIActivityViewController"]
 - ["PSo16NSObjectProtocol", "UIColor"]
 - ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIGraphicsBeginImageContext"]
@@ -807,6 +836,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "bottomTextField"]
 - !private ["PSo16NSObjectProtocol", "cameraButton"]
 - !private ["PSo16NSObjectProtocol", "cgRectValue"]
+- !private ["PSo16NSObjectProtocol", "completionWithItemsHandler"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
 - !private ["PSo16NSObjectProtocol", "default"]
 - !private ["PSo16NSObjectProtocol", "defaultTextAttributes"]
@@ -892,6 +922,8 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "isHidden"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textAlignment"]
+- !private ["CSo24UIActivityViewController", "completionWithItemsHandler"]
+- !private ["CSo24UIActivityViewController", "init"]
 - !private ["PSo12UIAppearance", "contentMode"]
 - !private ["PSo12UIAppearance", "defaultTextAttributes"]
 - !private ["PSo12UIAppearance", "delegate"]
@@ -911,6 +943,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "NSStrokeWidthAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "NSTextAlignment"]
 - !private ["PSo21UIAppearanceContainer", "NotificationCenter"]
+- !private ["PSo21UIAppearanceContainer", "UIActivityViewController"]
 - ["PSo21UIAppearanceContainer", "UIColor"]
 - ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIGraphicsBeginImageContext"]
@@ -921,6 +954,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["PSo21UIAppearanceContainer", "bottomTextField"]
 - !private ["PSo21UIAppearanceContainer", "cameraButton"]
+- !private ["PSo21UIAppearanceContainer", "completionWithItemsHandler"]
 - !private ["PSo21UIAppearanceContainer", "contentMode"]
 - !private ["PSo21UIAppearanceContainer", "defaultTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
@@ -980,6 +1014,7 @@ depends-member:
 - ["PSo18UIContentContainer", "NSStrokeWidthAttributeName"]
 - !private ["PSo18UIContentContainer", "NSTextAlignment"]
 - !private ["PSo18UIContentContainer", "NotificationCenter"]
+- !private ["PSo18UIContentContainer", "UIActivityViewController"]
 - ["PSo18UIContentContainer", "UIColor"]
 - ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIGraphicsBeginImageContext"]
@@ -990,6 +1025,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["PSo18UIContentContainer", "bottomTextField"]
 - !private ["PSo18UIContentContainer", "cameraButton"]
+- !private ["PSo18UIContentContainer", "completionWithItemsHandler"]
 - !private ["PSo18UIContentContainer", "delegate"]
 - !private ["PSo18UIContentContainer", "dismiss"]
 - !private ["PSo18UIContentContainer", "generateMemedImage"]
@@ -1064,6 +1100,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "NSStrokeWidthAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "NSTextAlignment"]
 - !private ["PSo18UIFocusEnvironment", "NotificationCenter"]
+- !private ["PSo18UIFocusEnvironment", "UIActivityViewController"]
 - ["PSo18UIFocusEnvironment", "UIColor"]
 - ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIGraphicsBeginImageContext"]
@@ -1074,6 +1111,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["PSo18UIFocusEnvironment", "bottomTextField"]
 - !private ["PSo18UIFocusEnvironment", "cameraButton"]
+- !private ["PSo18UIFocusEnvironment", "completionWithItemsHandler"]
 - !private ["PSo18UIFocusEnvironment", "contentMode"]
 - !private ["PSo18UIFocusEnvironment", "defaultTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
@@ -1143,6 +1181,7 @@ depends-member:
 - ["PSo31UIImagePickerControllerDelegate", "NSStrokeWidthAttributeName"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSTextAlignment"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NotificationCenter"]
+- !private ["PSo31UIImagePickerControllerDelegate", "UIActivityViewController"]
 - ["PSo31UIImagePickerControllerDelegate", "UIColor"]
 - ["PSo31UIImagePickerControllerDelegate", "UIFont"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIGraphicsBeginImageContext"]
@@ -1203,6 +1242,7 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "NSStrokeWidthAttributeName"]
 - !private ["PSo30UINavigationControllerDelegate", "NSTextAlignment"]
 - !private ["PSo30UINavigationControllerDelegate", "NotificationCenter"]
+- !private ["PSo30UINavigationControllerDelegate", "UIActivityViewController"]
 - ["PSo30UINavigationControllerDelegate", "UIColor"]
 - ["PSo30UINavigationControllerDelegate", "UIFont"]
 - !private ["PSo30UINavigationControllerDelegate", "UIGraphicsBeginImageContext"]
@@ -1242,9 +1282,11 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "unsubscribeFromKeyboardNotifications"]
 - !private ["PSo30UINavigationControllerDelegate", "view"]
 - ["PSo30UINavigationControllerDelegate", ""]
+- ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "Meme"]
+- !private ["CSo11UIResponder", "NSError"]
 - ["CSo11UIResponder", "NSFontAttributeName"]
 - ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - ["CSo11UIResponder", "NSNumber"]
@@ -1255,6 +1297,7 @@ depends-member:
 - ["CSo11UIResponder", "Notification"]
 - !private ["CSo11UIResponder", "NotificationCenter"]
 - ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIActivityViewController"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIColor"]
@@ -1270,8 +1313,10 @@ depends-member:
 - ["CSo11UIResponder", "UINavigationBar"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "UIToolbar"]
+- !private ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "bottomTextField"]
 - ["CSo11UIResponder", "cameraButton"]
+- !private ["CSo11UIResponder", "completionWithItemsHandler"]
 - !private ["CSo11UIResponder", "contentMode"]
 - !private ["CSo11UIResponder", "defaultTextAttributes"]
 - !private ["CSo11UIResponder", "delegate"]
@@ -1301,6 +1346,7 @@ depends-member:
 - ["CSo11UIResponder", "pickerController"]
 - !private ["CSo11UIResponder", "present"]
 - ["CSo11UIResponder", "save"]
+- ["CSo11UIResponder", "share"]
 - ["CSo11UIResponder", "shareButton"]
 - !private ["CSo11UIResponder", "sourceType"]
 - ["CSo11UIResponder", "subscribeToKeyboardNotifications"]
@@ -1328,6 +1374,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "NSStrokeWidthAttributeName"]
 - !private ["PSo30UIResponderStandardEditActions", "NSTextAlignment"]
 - !private ["PSo30UIResponderStandardEditActions", "NotificationCenter"]
+- !private ["PSo30UIResponderStandardEditActions", "UIActivityViewController"]
 - ["PSo30UIResponderStandardEditActions", "UIColor"]
 - ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UIGraphicsBeginImageContext"]
@@ -1338,6 +1385,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["PSo30UIResponderStandardEditActions", "bottomTextField"]
 - !private ["PSo30UIResponderStandardEditActions", "cameraButton"]
+- !private ["PSo30UIResponderStandardEditActions", "completionWithItemsHandler"]
 - !private ["PSo30UIResponderStandardEditActions", "contentMode"]
 - !private ["PSo30UIResponderStandardEditActions", "defaultTextAttributes"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
@@ -1391,6 +1439,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "NSStrokeWidthAttributeName"]
 - !private ["PSo16UIStateRestoring", "NSTextAlignment"]
 - !private ["PSo16UIStateRestoring", "NotificationCenter"]
+- !private ["PSo16UIStateRestoring", "UIActivityViewController"]
 - ["PSo16UIStateRestoring", "UIColor"]
 - ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIGraphicsBeginImageContext"]
@@ -1401,6 +1450,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["PSo16UIStateRestoring", "bottomTextField"]
 - !private ["PSo16UIStateRestoring", "cameraButton"]
+- !private ["PSo16UIStateRestoring", "completionWithItemsHandler"]
 - !private ["PSo16UIStateRestoring", "delegate"]
 - !private ["PSo16UIStateRestoring", "dismiss"]
 - !private ["PSo16UIStateRestoring", "generateMemedImage"]
@@ -1448,6 +1498,7 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "NSStrokeWidthAttributeName"]
 - !private ["PSo19UITextFieldDelegate", "NSTextAlignment"]
 - !private ["PSo19UITextFieldDelegate", "NotificationCenter"]
+- !private ["PSo19UITextFieldDelegate", "UIActivityViewController"]
 - ["PSo19UITextFieldDelegate", "UIColor"]
 - ["PSo19UITextFieldDelegate", "UIFont"]
 - !private ["PSo19UITextFieldDelegate", "UIGraphicsBeginImageContext"]
@@ -1504,6 +1555,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "NSStrokeWidthAttributeName"]
 - !private ["PSo18UITraitEnvironment", "NSTextAlignment"]
 - !private ["PSo18UITraitEnvironment", "NotificationCenter"]
+- !private ["PSo18UITraitEnvironment", "UIActivityViewController"]
 - ["PSo18UITraitEnvironment", "UIColor"]
 - ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIGraphicsBeginImageContext"]
@@ -1514,6 +1566,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["PSo18UITraitEnvironment", "bottomTextField"]
 - !private ["PSo18UITraitEnvironment", "cameraButton"]
+- !private ["PSo18UITraitEnvironment", "completionWithItemsHandler"]
 - !private ["PSo18UITraitEnvironment", "contentMode"]
 - !private ["PSo18UITraitEnvironment", "defaultTextAttributes"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
@@ -1571,9 +1624,11 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textAlignment"]
 - !private ["OSC17UIViewContentMode", "scaleAspectFit"]
+- ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "Meme"]
+- !private ["CSo16UIViewController", "NSError"]
 - ["CSo16UIViewController", "NSFontAttributeName"]
 - ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - ["CSo16UIViewController", "NSNumber"]
@@ -1584,6 +1639,7 @@ depends-member:
 - ["CSo16UIViewController", "Notification"]
 - !private ["CSo16UIViewController", "NotificationCenter"]
 - ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIActivityViewController"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UIColor"]
@@ -1599,8 +1655,10 @@ depends-member:
 - ["CSo16UIViewController", "UINavigationBar"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "UIToolbar"]
+- !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "bottomTextField"]
 - ["CSo16UIViewController", "cameraButton"]
+- !private ["CSo16UIViewController", "completionWithItemsHandler"]
 - !private ["CSo16UIViewController", "delegate"]
 - !private ["CSo16UIViewController", "dismiss"]
 - ["CSo16UIViewController", "generateMemedImage"]
@@ -1622,6 +1680,7 @@ depends-member:
 - ["CSo16UIViewController", "pickerController"]
 - !private ["CSo16UIViewController", "present"]
 - ["CSo16UIViewController", "save"]
+- ["CSo16UIViewController", "share"]
 - ["CSo16UIViewController", "shareButton"]
 - !private ["CSo16UIViewController", "sourceType"]
 - ["CSo16UIViewController", "subscribeToKeyboardNotifications"]
@@ -1640,9 +1699,11 @@ depends-member:
 - ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "viewWillDisappear"]
 - ["CSo16UIViewController", ""]
+- ["C4MeMe14ViewController", "AnyObject"]
 - ["C4MeMe14ViewController", "Bool"]
 - ["C4MeMe14ViewController", "CGFloat"]
 - ["C4MeMe14ViewController", "Meme"]
+- !private ["C4MeMe14ViewController", "NSError"]
 - ["C4MeMe14ViewController", "NSFontAttributeName"]
 - ["C4MeMe14ViewController", "NSForegroundColorAttributeName"]
 - ["C4MeMe14ViewController", "NSNumber"]
@@ -1653,6 +1714,7 @@ depends-member:
 - ["C4MeMe14ViewController", "Notification"]
 - !private ["C4MeMe14ViewController", "NotificationCenter"]
 - ["C4MeMe14ViewController", "String"]
+- !private ["C4MeMe14ViewController", "UIActivityViewController"]
 - ["C4MeMe14ViewController", "UIBarButtonItem"]
 - ["C4MeMe14ViewController", "UIButton"]
 - ["C4MeMe14ViewController", "UIColor"]
@@ -1668,6 +1730,7 @@ depends-member:
 - ["C4MeMe14ViewController", "UINavigationBar"]
 - ["C4MeMe14ViewController", "UITextField"]
 - ["C4MeMe14ViewController", "UIToolbar"]
+- !private ["C4MeMe14ViewController", "Void"]
 - ["C4MeMe14ViewController", "bottomTextField"]
 - ["C4MeMe14ViewController", "cameraButton"]
 - ["C4MeMe14ViewController", "deinit"]
@@ -1690,6 +1753,7 @@ depends-member:
 - ["C4MeMe14ViewController", "pickerController"]
 - !private ["C4MeMe14ViewController", "present"]
 - ["C4MeMe14ViewController", "save"]
+- ["C4MeMe14ViewController", "share"]
 - ["C4MeMe14ViewController", "shareButton"]
 - ["C4MeMe14ViewController", "subscribeToKeyboardNotifications"]
 - ["C4MeMe14ViewController", "textField"]
@@ -1734,6 +1798,7 @@ depends-member:
 - ["Ps9_Hashable", "NSStrokeWidthAttributeName"]
 - !private ["Ps9_Hashable", "NSTextAlignment"]
 - !private ["Ps9_Hashable", "NotificationCenter"]
+- !private ["Ps9_Hashable", "UIActivityViewController"]
 - ["Ps9_Hashable", "UIColor"]
 - ["Ps9_Hashable", "UIFont"]
 - !private ["Ps9_Hashable", "UIGraphicsBeginImageContext"]
@@ -1752,6 +1817,7 @@ depends-member:
 - !private ["Ps9_Hashable", "cameraButton"]
 - !private ["Ps9_Hashable", "center"]
 - !private ["Ps9_Hashable", "cgRectValue"]
+- !private ["Ps9_Hashable", "completionWithItemsHandler"]
 - !private ["Ps9_Hashable", "contentMode"]
 - !private ["Ps9_Hashable", "default"]
 - !private ["Ps9_Hashable", "defaultTextAttributes"]
@@ -1866,6 +1932,7 @@ depends-nominal:
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
+- !private "CSo24UIActivityViewController"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "CSo15UIBarButtonItem"
@@ -1934,4 +2001,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "afc2526afe4da66552720a3481a9f334"
+interface-hash: "c9e7ca1392047eb837749792be545081"

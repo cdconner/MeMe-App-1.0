@@ -153,8 +153,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         return memedImage
     }
     
-    @IBAction func share() {
+    @IBAction func share(sender: AnyObject) {
+        let memedImage = generateMemedImage()
+        let activityController = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
+        activityController.completionWithItemsHandler = {
+            
+            self.save()
+        }
         
+        present(activityController, animated: true, completion: nil)
     }
 }
 
