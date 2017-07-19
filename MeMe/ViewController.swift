@@ -139,6 +139,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Hide toolbar and navbar
         self.toolBar.isHidden = true
         self.navBar.isHidden = true
+        self.shareButton.isHidden = true
         
         // Render view to an image
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -149,6 +150,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         //Unhide toolbar and navbar
         self.toolBar.isHidden = false
         self.navBar.isHidden = false
+        self.shareButton.isHidden = false
         
         return memedImage
     }
@@ -156,8 +158,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func share(sender: AnyObject) {
         let memedImage = generateMemedImage()
         let activityController = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
-        activityController.completionWithItemsHandler = {
-            
+        activityController.completionWithItemsHandler = {(activityType: UIActivityType?, completed:Bool, returnedItems:[Any]?, error: Error?) in
             self.save()
         }
         

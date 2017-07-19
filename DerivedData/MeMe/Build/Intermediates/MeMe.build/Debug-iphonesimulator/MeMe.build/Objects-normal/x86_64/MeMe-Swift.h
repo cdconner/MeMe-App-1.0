@@ -192,6 +192,7 @@ SWIFT_CLASS("_TtC4MeMe14ViewController")
 @property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navBar;
 - (void)save;
 - (UIImage * _Nonnull)generateMemedImage SWIFT_WARN_UNUSED_RESULT;
+- (IBAction)shareWithSender:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
