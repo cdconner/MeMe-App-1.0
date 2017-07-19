@@ -158,7 +158,6 @@ SWIFT_CLASS("_TtC4MeMe11AppDelegate")
 @class UIBarButtonItem;
 @class UIImageView;
 @class UITextField;
-@class UIButton;
 @class UIToolbar;
 @class UINavigationBar;
 @class UIImage;
@@ -171,8 +170,8 @@ SWIFT_CLASS("_TtC4MeMe14ViewController")
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified cameraButton;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imagePickerView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified bottomTextField;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified shareButton;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified topTextField;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified shareButton;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull memeTextAttributes;

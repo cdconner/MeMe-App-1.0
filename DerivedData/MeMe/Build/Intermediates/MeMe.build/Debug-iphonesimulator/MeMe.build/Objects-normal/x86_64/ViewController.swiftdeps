@@ -60,7 +60,6 @@ depends-top-level:
 - !private "UIActivityType"
 - !private "UIActivityViewController"
 - "UIBarButtonItem"
-- "UIButton"
 - "UIColor"
 - "UIFont"
 - !private "UIGraphicsBeginImageContext"
@@ -160,7 +159,6 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "endEditing"]
 - !private ["PSo15CALayerDelegate", "frame"]
 - !private ["PSo15CALayerDelegate", "image"]
-- !private ["PSo15CALayerDelegate", "isEnabled"]
 - !private ["PSo15CALayerDelegate", "isHidden"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "textAlignment"]
@@ -750,7 +748,6 @@ depends-member:
 - !private ["CSo8NSObject", "UIActivityType"]
 - !private ["CSo8NSObject", "UIActivityViewController"]
 - ["CSo8NSObject", "UIBarButtonItem"]
-- ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIGraphicsBeginImageContext"]
@@ -978,7 +975,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "imagePickerControllerDidCancel"]
 - !private ["PSo21UIAppearanceContainer", "imagePickerView"]
 - ["PSo21UIAppearanceContainer", "init"]
-- !private ["PSo21UIAppearanceContainer", "isEnabled"]
 - !private ["PSo21UIAppearanceContainer", "isHidden"]
 - !private ["PSo21UIAppearanceContainer", "isSourceTypeAvailable"]
 - !private ["PSo21UIAppearanceContainer", "keyboardWillHide"]
@@ -1013,8 +1009,6 @@ depends-member:
 - !private ["CSo15UIBarButtonItem", "isEnabled"]
 - !private ["CSo9UIBarItem", "isEnabled"]
 - !private ["PSo16UIBarPositioning", "isHidden"]
-- !private ["CSo8UIButton", "isEnabled"]
-- !private ["CSo8UIButton", "isHidden"]
 - ["CSo7UIColor", "black"]
 - ["CSo7UIColor", "white"]
 - !private ["PSo18UIContentContainer", "Meme"]
@@ -1079,8 +1073,6 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "textAlignment"]
 - !private ["CSo9UIControl", "defaultTextAttributes"]
 - !private ["CSo9UIControl", "delegate"]
-- !private ["CSo9UIControl", "isEnabled"]
-- !private ["CSo9UIControl", "isHidden"]
 - !private ["CSo9UIControl", "text"]
 - !private ["CSo9UIControl", "textAlignment"]
 - !private ["PSo17UICoordinateSpace", "contentMode"]
@@ -1090,7 +1082,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "endEditing"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "image"]
-- !private ["PSo17UICoordinateSpace", "isEnabled"]
 - !private ["PSo17UICoordinateSpace", "isHidden"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textAlignment"]
@@ -1101,7 +1092,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "endEditing"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "image"]
-- !private ["PSo13UIDynamicItem", "isEnabled"]
 - !private ["PSo13UIDynamicItem", "isHidden"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textAlignment"]
@@ -1139,7 +1129,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "imagePickerControllerDidCancel"]
 - !private ["PSo18UIFocusEnvironment", "imagePickerView"]
 - ["PSo18UIFocusEnvironment", "init"]
-- !private ["PSo18UIFocusEnvironment", "isEnabled"]
 - !private ["PSo18UIFocusEnvironment", "isHidden"]
 - !private ["PSo18UIFocusEnvironment", "isSourceTypeAvailable"]
 - !private ["PSo18UIFocusEnvironment", "keyboardWillHide"]
@@ -1178,7 +1167,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "endEditing"]
 - !private ["PSo11UIFocusItem", "frame"]
 - !private ["PSo11UIFocusItem", "image"]
-- !private ["PSo11UIFocusItem", "isEnabled"]
 - !private ["PSo11UIFocusItem", "isHidden"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "textAlignment"]
@@ -1316,7 +1304,6 @@ depends-member:
 - !private ["CSo11UIResponder", "UIActivityType"]
 - !private ["CSo11UIResponder", "UIActivityViewController"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
-- ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIGraphicsBeginImageContext"]
@@ -1347,7 +1334,6 @@ depends-member:
 - ["CSo11UIResponder", "imagePickerControllerDidCancel"]
 - ["CSo11UIResponder", "imagePickerView"]
 - ["CSo11UIResponder", "init"]
-- !private ["CSo11UIResponder", "isEnabled"]
 - !private ["CSo11UIResponder", "isHidden"]
 - !private ["CSo11UIResponder", "isSourceTypeAvailable"]
 - ["CSo11UIResponder", "keyboardWillHide"]
@@ -1416,7 +1402,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "imagePickerControllerDidCancel"]
 - !private ["PSo30UIResponderStandardEditActions", "imagePickerView"]
 - ["PSo30UIResponderStandardEditActions", "init"]
-- !private ["PSo30UIResponderStandardEditActions", "isEnabled"]
 - !private ["PSo30UIResponderStandardEditActions", "isHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "isSourceTypeAvailable"]
 - !private ["PSo30UIResponderStandardEditActions", "keyboardWillHide"]
@@ -1600,7 +1585,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "imagePickerControllerDidCancel"]
 - !private ["PSo18UITraitEnvironment", "imagePickerView"]
 - ["PSo18UITraitEnvironment", "init"]
-- !private ["PSo18UITraitEnvironment", "isEnabled"]
 - !private ["PSo18UITraitEnvironment", "isHidden"]
 - !private ["PSo18UITraitEnvironment", "isSourceTypeAvailable"]
 - !private ["PSo18UITraitEnvironment", "keyboardWillHide"]
@@ -1639,7 +1623,6 @@ depends-member:
 - !private ["CSo6UIView", "endEditing"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "image"]
-- !private ["CSo6UIView", "isEnabled"]
 - !private ["CSo6UIView", "isHidden"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textAlignment"]
@@ -1662,7 +1645,6 @@ depends-member:
 - !private ["CSo16UIViewController", "UIActivityType"]
 - !private ["CSo16UIViewController", "UIActivityViewController"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
-- ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "UIFont"]
 - !private ["CSo16UIViewController", "UIGraphicsBeginImageContext"]
@@ -1737,7 +1719,6 @@ depends-member:
 - !private ["C4MeMe14ViewController", "UIActivityType"]
 - !private ["C4MeMe14ViewController", "UIActivityViewController"]
 - ["C4MeMe14ViewController", "UIBarButtonItem"]
-- ["C4MeMe14ViewController", "UIButton"]
 - ["C4MeMe14ViewController", "UIColor"]
 - ["C4MeMe14ViewController", "UIFont"]
 - !private ["C4MeMe14ViewController", "UIGraphicsBeginImageContext"]
@@ -1797,7 +1778,6 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "endEditing"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isEnabled"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textAlignment"]
@@ -1959,7 +1939,6 @@ depends-nominal:
 - !private "CSo15UIBarButtonItem"
 - !private "CSo9UIBarItem"
 - !private "PSo16UIBarPositioning"
-- !private "CSo8UIButton"
 - "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
@@ -2022,4 +2001,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "c9e7ca1392047eb837749792be545081"
+interface-hash: "7f02061a74803620ba8b75e86b522033"

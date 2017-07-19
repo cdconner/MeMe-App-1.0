@@ -63,17 +63,15 @@
                                 <rect key="frame" x="0.0" y="4" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="MeMe" id="lNy-sX-ivV" userLabel="MeMe"/>
+                                    <navigationItem title="MeMe" id="lNy-sX-ivV" userLabel="MeMe">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="NgB-xM-5DM">
+                                            <connections>
+                                                <action selector="shareWithSender:" destination="BYZ-38-t0r" id="G1E-6u-hjE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83Q-0d-Y7P">
-                                <rect key="frame" x="16" y="10" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Share"/>
-                                <connections>
-                                    <action selector="shareWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B4B-6Y-kTU"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -87,7 +85,7 @@
                         <outlet property="cameraButton" destination="A2l-8P-OPQ" id="ktQ-08-HUC"/>
                         <outlet property="imagePickerView" destination="p5a-Yx-2wE" id="G0N-fe-Tsz"/>
                         <outlet property="navBar" destination="nfv-vJ-GVa" id="SXL-qc-6ts"/>
-                        <outlet property="shareButton" destination="83Q-0d-Y7P" id="YcR-8w-r9j"/>
+                        <outlet property="shareButton" destination="NgB-xM-5DM" id="3h9-VA-I1Y"/>
                         <outlet property="toolBar" destination="WdY-wS-HlH" id="6YH-hi-pG5"/>
                         <outlet property="topTextField" destination="sxo-vi-2dq" id="b2E-rl-ZX5"/>
                     </connections>

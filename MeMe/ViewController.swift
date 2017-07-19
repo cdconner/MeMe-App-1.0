@@ -22,14 +22,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var imagePickerView: UIImageView!
     @IBOutlet weak var bottomTextField: UITextField!
-    @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var topTextField: UITextField!
-    
+    @IBOutlet weak var shareButton: UIBarButtonItem!
     
     override func viewWillAppear(_ animated: Bool) {
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         subscribeToKeyboardNotifications()
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -139,7 +139,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Hide toolbar and navbar
         self.toolBar.isHidden = true
         self.navBar.isHidden = true
-        self.shareButton.isHidden = true
+       // self.shareButton.isHidden = true
         
         // Render view to an image
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -150,7 +150,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         //Unhide toolbar and navbar
         self.toolBar.isHidden = false
         self.navBar.isHidden = false
-        self.shareButton.isHidden = false
+      //  self.shareButton.isHidden = false
         
         return memedImage
     }
