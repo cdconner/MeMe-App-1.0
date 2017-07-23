@@ -33,8 +33,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topTextField.textAlignment = NSTextAlignment.center
-        bottomTextField.textAlignment = NSTextAlignment.center
         topTextField.text = "Top"
         bottomTextField.text = "Bottom"
         pickerController.delegate = self
@@ -42,6 +40,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         bottomTextField.delegate = self
         topTextField.defaultTextAttributes = memeTextAttributes
         bottomTextField.defaultTextAttributes = memeTextAttributes
+        topTextField.textAlignment = NSTextAlignment.center
+        bottomTextField.textAlignment = NSTextAlignment.center
         shareButton.isEnabled = false
     }
     
@@ -49,7 +49,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         NSStrokeColorAttributeName: UIColor.black,
         NSForegroundColorAttributeName: UIColor.white,
         NSFontAttributeName: UIFont(name: "HelveticaNeue-CondensedBlack", size: 27)!,
-        NSStrokeWidthAttributeName: NSNumber(value: 4.0)]
+        NSStrokeWidthAttributeName: NSNumber(value: -4.0)]
     
     
     @IBAction func pickAnImage(_ sender: Any) {
@@ -74,7 +74,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func imagePickerControllerDidCancel(_ textField: UIImagePickerController) {
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
     
