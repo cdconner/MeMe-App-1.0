@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+class MeMeEditorVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     let pickerController = UIImagePickerController()
     
@@ -33,8 +33,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topTextField.text = "Top"
-        bottomTextField.text = "Bottom"
+        topTextField.text = "TOP"
+        bottomTextField.text = "BOTTOM"
+        topTextField.autocapitalizationType = UITextAutocapitalizationType.allCharacters
+        bottomTextField.autocapitalizationType = UITextAutocapitalizationType.allCharacters
         pickerController.delegate = self
         topTextField.delegate = self
         bottomTextField.delegate = self
@@ -50,6 +52,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         NSAttributedStringKey.foregroundColor.rawValue: UIColor.white,
         NSAttributedStringKey.font.rawValue: UIFont(name: "HelveticaNeue-CondensedBlack", size: 27)!,
         NSAttributedStringKey.strokeWidth.rawValue: NSNumber(value: -4.0)]
+    
+    func customizeTextField(textField: UITextField, defaultText: String) {
+        let memeTextAttributes:[String:Any] = [
+            NSStrokeColorAttributeName: UIColor.black,
+            NSForegroundColorAttributeName: UIColor.white,
+            NSFontAttributeName: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
+            NSStrokeWidthAttributeName: -5
+        ]
+        
+        textField.defaultTextAttributes = memeTextAttributes
+        textField.text = defaultText
+        textField.textAlignment = .center
+    }
 
     @IBAction func pickAnImage(_ sender: Any) {
         pickerController.sourceType = .photoLibrary
