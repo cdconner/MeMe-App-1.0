@@ -46,12 +46,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     let memeTextAttributes:[String:Any] = [
-        NSStrokeColorAttributeName: UIColor.black,
-        NSForegroundColorAttributeName: UIColor.white,
-        NSFontAttributeName: UIFont(name: "HelveticaNeue-CondensedBlack", size: 27)!,
-        NSStrokeWidthAttributeName: NSNumber(value: -4.0)]
-    
-    
+        NSAttributedStringKey.strokeColor.rawValue: UIColor.black,
+        NSAttributedStringKey.foregroundColor.rawValue: UIColor.white,
+        NSAttributedStringKey.font.rawValue: UIFont(name: "HelveticaNeue-CondensedBlack", size: 27)!,
+        NSAttributedStringKey.strokeWidth.rawValue: NSNumber(value: -4.0)]
+
     @IBAction func pickAnImage(_ sender: Any) {
         pickerController.sourceType = .photoLibrary
         self.present(pickerController, animated: true, completion: nil)
@@ -70,7 +69,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         shareButton.isEnabled = true
         self.dismiss(animated: true, completion: nil)
-        
     }
     
     func imagePickerControllerDidCancel(_ textField: UIImagePickerController) {
@@ -94,28 +92,31 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        
         super.viewWillDisappear(animated)
         unsubscribeFromKeyboardNotifications()
     }
     
     func subscribeToKeyboardNotifications() {
-        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: nil)
     }
     
     func unsubscribeFromKeyboardNotifications() {
-        
         NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
     }
     
-    func keyboardWillShow(_ notification:Notification) {
-        
-        view.frame.origin.y -= (getKeyboardHeight(notification)/2)
+//    func keyboardWillShow(_ notification:Notification) {
+//        view.frame.origin.y -= (getKeyboardHeight(notification)/2)
+//    }
+    
+    @objc func keyboardWillShow(_ notification:Notification) {
+        if (topTextField.isFirstResponder) {
+            view.frame.origin.y -= (getKeyboardHeight(notification)/6)
+        } else {view.frame.origin.y -= (getKeyboardHeight(notification))
+        }
     }
     
-    func keyboardWillHide(_ notification:Notification) {
+    @objc func keyboardWillHide(_ notification:Notification) {
         view.frame.origin.y = 0
     }
     
@@ -151,7 +152,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.toolBar.isHidden = false
         self.navBar.isHidden = false
       //  self.shareButton.isHidden = false
-        
         return memedImage
     }
     

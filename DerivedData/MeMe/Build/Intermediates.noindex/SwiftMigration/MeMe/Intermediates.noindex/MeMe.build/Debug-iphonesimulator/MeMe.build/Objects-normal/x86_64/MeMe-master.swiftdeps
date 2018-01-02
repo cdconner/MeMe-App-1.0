@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "d5e3c84f6553c68a50e08355b7bc1105"
+build_time: [1514839946, 833581000]
+inputs:
+  "/Users/chrisconner/Desktop/MeMe/MeMe/ViewController.swift": [1514837674, 0]
+  "/Users/chrisconner/Desktop/MeMe/MeMe/AppDelegate.swift": [1500430930, 0]

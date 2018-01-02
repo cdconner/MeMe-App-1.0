@@ -2,7 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSPhotoLibraryUsageDescription</key>
+	<key>NSCameraUsageDescription</key>
+    <string>Use one of your photos for the meme</string>
+    <key>NSPhotoLibraryUsageDescription</key>
 	<string>This app would like to access your photos to allow you to pick one</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
