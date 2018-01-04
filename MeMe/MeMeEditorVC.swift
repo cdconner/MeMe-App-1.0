@@ -33,25 +33,26 @@ class MeMeEditorVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topTextField.text = "TOP"
-        bottomTextField.text = "BOTTOM"
-        topTextField.autocapitalizationType = UITextAutocapitalizationType.allCharacters
-        bottomTextField.autocapitalizationType = UITextAutocapitalizationType.allCharacters
+//        topTextField.text = "TOP"
+//        bottomTextField.text = "BOTTOM"
+        customizeTextField(textField: topTextField, defaultText: "Top")
+        customizeTextField(textField: bottomTextField, defaultText: "Bottom")
         pickerController.delegate = self
         topTextField.delegate = self
         bottomTextField.delegate = self
-        topTextField.defaultTextAttributes = memeTextAttributes
-        bottomTextField.defaultTextAttributes = memeTextAttributes
-        topTextField.textAlignment = NSTextAlignment.center
-        bottomTextField.textAlignment = NSTextAlignment.center
+//        topTextField.defaultTextAttributes = memeTextAttributes
+//        bottomTextField.defaultTextAttributes = memeTextAttributes
+//        topTextField.textAlignment = NSTextAlignment.center
+//        bottomTextField.textAlignment = NSTextAlignment.center
         shareButton.isEnabled = false
     }
     
-    let memeTextAttributes:[String:Any] = [
-        NSAttributedStringKey.strokeColor.rawValue: UIColor.black,
-        NSAttributedStringKey.foregroundColor.rawValue: UIColor.white,
-        NSAttributedStringKey.font.rawValue: UIFont(name: "HelveticaNeue-CondensedBlack", size: 27)!,
-        NSAttributedStringKey.strokeWidth.rawValue: NSNumber(value: -4.0)]
+//    let memeTextAttributes:[String:Any] = [
+//        NSAttributedStringKey.strokeColor.rawValue: UIColor.black,
+//        NSAttributedStringKey.foregroundColor.rawValue: UIColor.white,
+//        NSAttributedStringKey.font.rawValue: UIFont(name: "HelveticaNeue-CondensedBlack", size: 27)!,
+//        NSAttributedStringKey.strokeWidth.rawValue: NSNumber(value: -4.0)]
+    
     
     func customizeTextField(textField: UITextField, defaultText: String) {
         let memeTextAttributes:[String:Any] = [
@@ -61,6 +62,7 @@ class MeMeEditorVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
             NSStrokeWidthAttributeName: -5
         ]
         
+        textField.autocapitalizationType = UITextAutocapitalizationType.allCharacters
         textField.defaultTextAttributes = memeTextAttributes
         textField.text = defaultText
         textField.textAlignment = .center
