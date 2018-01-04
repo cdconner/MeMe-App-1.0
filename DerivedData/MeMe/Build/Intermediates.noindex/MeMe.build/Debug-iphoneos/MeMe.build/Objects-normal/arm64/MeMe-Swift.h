@@ -221,7 +221,7 @@ SWIFT_CLASS("_TtC4MeMe12MeMeEditorVC")
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified shareButton;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull memeTextAttributes SWIFT_DEPRECATED_OBJC("Swift property 'MeMeEditorVC.memeTextAttributes' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (void)customizeTextFieldWithTextField:(UITextField * _Nonnull)textField defaultText:(NSString * _Nonnull)defaultText SWIFT_DEPRECATED_OBJC("Swift method 'MeMeEditorVC.customizeTextField(textField:defaultText:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (IBAction)pickAnImage:(id _Nonnull)sender;
 - (IBAction)pickanImageFromCamera:(id _Nonnull)sender;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)pickerController didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;

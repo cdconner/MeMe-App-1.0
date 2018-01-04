@@ -211,9 +211,9 @@ SWIFT_CLASS("_TtC4MeMe11AppDelegate")
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC4MeMe14ViewController")
-@interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
-@property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull pickerController SWIFT_DEPRECATED_OBJC("Swift property 'ViewController.pickerController' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+SWIFT_CLASS("_TtC4MeMe12MeMeEditorVC")
+@interface MeMeEditorVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+@property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull pickerController SWIFT_DEPRECATED_OBJC("Swift property 'MeMeEditorVC.pickerController' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified cameraButton;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imagePickerView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified bottomTextField;
@@ -221,7 +221,7 @@ SWIFT_CLASS("_TtC4MeMe14ViewController")
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified shareButton;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull memeTextAttributes SWIFT_DEPRECATED_OBJC("Swift property 'ViewController.memeTextAttributes' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (void)customizeTextFieldWithTextField:(UITextField * _Nonnull)textField defaultText:(NSString * _Nonnull)defaultText SWIFT_DEPRECATED_OBJC("Swift method 'MeMeEditorVC.customizeTextField(textField:defaultText:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (IBAction)pickAnImage:(id _Nonnull)sender;
 - (IBAction)pickanImageFromCamera:(id _Nonnull)sender;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)pickerController didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
@@ -229,15 +229,15 @@ SWIFT_CLASS("_TtC4MeMe14ViewController")
 - (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)viewWillDisappear:(BOOL)animated;
-- (void)subscribeToKeyboardNotifications SWIFT_DEPRECATED_OBJC("Swift method 'ViewController.subscribeToKeyboardNotifications()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
-- (void)unsubscribeFromKeyboardNotifications SWIFT_DEPRECATED_OBJC("Swift method 'ViewController.unsubscribeFromKeyboardNotifications()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (void)subscribeToKeyboardNotifications SWIFT_DEPRECATED_OBJC("Swift method 'MeMeEditorVC.subscribeToKeyboardNotifications()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (void)unsubscribeFromKeyboardNotifications SWIFT_DEPRECATED_OBJC("Swift method 'MeMeEditorVC.unsubscribeFromKeyboardNotifications()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (void)keyboardWillShow:(NSNotification * _Nonnull)notification;
 - (void)keyboardWillHide:(NSNotification * _Nonnull)notification;
-- (CGFloat)getKeyboardHeight:(NSNotification * _Nonnull)notification SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_OBJC("Swift method 'ViewController.getKeyboardHeight(_:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (CGFloat)getKeyboardHeight:(NSNotification * _Nonnull)notification SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_OBJC("Swift method 'MeMeEditorVC.getKeyboardHeight(_:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified toolBar;
 @property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navBar;
-- (void)save SWIFT_DEPRECATED_OBJC("Swift method 'ViewController.save()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
-- (UIImage * _Nonnull)generateMemedImage SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_OBJC("Swift method 'ViewController.generateMemedImage()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (void)save SWIFT_DEPRECATED_OBJC("Swift method 'MeMeEditorVC.save()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (UIImage * _Nonnull)generateMemedImage SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_OBJC("Swift method 'MeMeEditorVC.generateMemedImage()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (IBAction)shareWithSender:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
